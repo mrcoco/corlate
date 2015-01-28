@@ -1,0 +1,45 @@
+<aside class="col-md-4">
+    <div class="widget search">
+        {{ search:form class="search-form" }} 
+            <input name="q" class="form-control search_box" autocomplete="off" placeholder="Search terms..." />
+        {{ /search:form }}
+    </div><!--/.search-->
+	
+    <div class="widget categories">
+        <h3>Categories</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="blog_category">
+                {{ blog:categories order-by="title" limit="5" }}
+                    <li><a href="{{ url }}">{{ title }}<span class="badge">04</span></a></li>
+                {{ /blog:categories }}
+                </ul>
+            </div>
+        </div>                     
+    </div><!--/.categories-->
+	
+	<div class="widget archieve">
+        {{ widgets:area slug="sidebar" }}                    
+    </div><!--/.archieve-->
+	
+    <div class="widget tags">
+        <h3>Tag </h3>
+        <ul class="tag-cloud">
+        {{ blog:tags limit="10" }}
+            <li><a class="btn btn-xs btn-primary" href="{{ url }}">{{ title }}</a></li>
+        {{ /blog:tags }}
+        </ul>
+    </div><!--/.tags-->
+	
+	<div class="widget blog_gallery">
+        <h3>Our Gallery</h3>
+        <ul class="sidebar-gallery">
+            <li><a href="#"><img src="{{ theme:path }}/images/blog/gallery1.png" alt="" /></a></li>
+            <li><a href="#"><img src="{{ theme:path }}/images/blog/gallery2.png" alt="" /></a></li>
+            <li><a href="#"><img src="{{ theme:path }}/images/blog/gallery3.png" alt="" /></a></li>
+            <li><a href="#"><img src="{{ theme:path }}/images/blog/gallery4.png" alt="" /></a></li>
+            <li><a href="#"><img src="{{ theme:path }}/images/blog/gallery5.png" alt="" /></a></li>
+            <li><a href="#"><img src="{{ theme:path }}/images/blog/gallery6.png" alt="" /></a></li>
+        </ul>
+    </div><!--/.blog_gallery-->
+</aside>
