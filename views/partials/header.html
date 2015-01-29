@@ -15,10 +15,10 @@
                             <li><a href="#"><i class="fa fa-skype"></i></a></li>
                         </ul>
                         <div class="search">
-                            <form role="form">
-                                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                            {{ search:form }} 
+                                <input name="q" class="search-form" autocomplete="off" placeholder="Search terms..." />
                                 <i class="fa fa-search"></i>
-                            </form>
+                            {{ /search:form }}                        
                        </div>
                    </div>
                 </div>
