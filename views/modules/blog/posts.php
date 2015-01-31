@@ -20,9 +20,9 @@
                             <a href="#">                            
                             {{ theme:image file="blog/blog1.jpg" alt="Fun!" width="100%" class="img-responsive img-blog" }}
                             </a>
-                            <h2><a href="{{ url }}">{{ title }}</a></h2>
+                            <h2><a href="{{ news_url }}">{{ title }}</a></h2>
                             <h3>{{ intro }}</h3>
-                            <a class="btn btn-primary readmore" href="{{ url }}">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn btn-primary readmore" href="{{ url:base }}news/{{ helper:date timestamp=created_on format="Y/m" }}/{{ slug }}">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>    
                 </div><!--/.blog-item-->

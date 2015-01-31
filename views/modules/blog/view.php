@@ -1,7 +1,7 @@
 {{ post }}
 <section id="blog" class="container">
     <div class="center">
-        <h2>Blogs</h2>
+        <h2>Berita</h2>
         <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
     </div>
     <div class="blog">
@@ -14,7 +14,7 @@
                             <div class="entry-meta">
                                 <span id="publish_date">{{ helper:date timestamp=created_on format="d M Y" }}</span>
                                 <span><i class="fa fa-user"></i> <a href="#">{{ user:display_name user_id=author_id }}</a></span>
-                                <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">{{ comments:count_string entry_id=id entry_key="blog:post" entry_plural="blog:posts" }}</a></span>                                    
+                                <span><i class="fa fa-comment"></i> <a href="#">{{ comments:count_string entry_id=id entry_key="blog:post" entry_plural="blog:posts" }}</a></span>                                    
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-10 blog-content">

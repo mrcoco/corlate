@@ -44,6 +44,8 @@
 {{ if { url:segments segment="1" } == '' OR { url:segments segment="1" } == 'home' }}
 {{ elseif { url:segments segment="1" } == 'blog' }}
     {{ template:body }}
+{{ elseif { url:segments segment="1" } == 'news' }}
+    {{ template:body }}
 {{ elseif { url:segments segment="1" } == 'contact' }}
 <section id="contact-info">
     <div class="center">

@@ -11,7 +11,7 @@
             <div class="col-sm-6">
                 <ul class="blog_category">
                 {{ blog:categories order-by="title" limit="5" }}
-                    <li><a href="{{ url }}">{{ title }}<span class="badge">04</span></a></li>
+                    <li><a href="{{ url:base }}news/category/{{ slug }}">{{ title }}<span class="badge">04</span></a></li>
                 {{ /blog:categories }}
                 </ul>
             </div>

@@ -10,15 +10,10 @@
             {{ sponsors:items }}
             {{ sponsors }}            
                 <li>
-                    <a href="{{ link }}"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="{{ files:image_url id=image }}"></a>
+                    <a href="{{ link }}"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="{{ delay}}" src="{{ files:image_url id=image }}"></a>
                 </li>
             {{ /sponsors }}
             {{ /sponsors:items }}
-    
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="{{ theme:path }}/images/partners/partner2.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="{{ theme:path }}/images/partners/partner3.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="{{ theme:path }}/images/partners/partner4.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="{{ theme:path }}/images/partners/partner5.png"></a></li>
             </ul>
         </div>        
     </div><!--/.container-->
