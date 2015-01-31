@@ -12,27 +12,35 @@
 {{ if { url:segments segment="1" } == '' AND theme:options:slider == 'yes' }}
     {{ theme:partial name="slider" }} 
 {{ endif }}
-{{ if { url:segments segment="1" } == '' AND theme:options:recent-works == 'yes' }}
-    {{ theme:partial name="recent-works" }} 
-{{ endif }} 
-{{ if { url:segments segment="1" } == '' AND theme:options:services == 'yes' }}
-    {{ theme:partial name="services" }} 
-{{ endif }}
-{{ if { url:segments segment="1" } == '' AND theme:options:feature == 'yes' }}
-    {{ theme:partial name="feature" }} 
-{{ endif }}
-{{ if { url:segments segment="1" } == '' AND theme:options:middle == 'yes' }}
-    {{ theme:partial name="middle" }}
-{{ endif }}
-{{ if { url:segments segment="1" } == '' AND theme:options:content == 'yes' }}
-    {{ theme:partial name="content" }}
-{{ endif }}
-{{ if { url:segments segment="1" } == '' AND theme:options:partner == 'yes' }}
-    {{ theme:partial name="partner" }}
-{{ endif }}
 {{ if { url:segments segment="1" } == '' AND theme:options:conatcat == 'yes' }}
     {{ theme:partial name="conatcat-info" }} 
 {{ endif }} 
+<!-- profile pejabat -->
+{{ if { url:segments segment="1" } == '' AND theme:options:content == 'yes' }}
+    {{ theme:partial name="content" }}
+{{ endif }}
+<!-- Pengumuman -->
+{{ if { url:segments segment="1" } == '' AND theme:options:feature == 'yes' }}
+    {{ theme:partial name="feature" }} 
+{{ endif }}
+<!-- Berita -->
+{{ if { url:segments segment="1" } == '' AND theme:options:middle == 'yes' }}
+    {{ theme:partial name="middle" }}
+{{ endif }}
+<!-- sekolah kami -->
+{{ if { url:segments segment="1" } == '' AND theme:options:services == 'yes' }}
+    {{ theme:partial name="services" }} 
+{{ endif }}
+<!-- Gallery -->
+{{ if { url:segments segment="1" } == '' AND theme:options:recent-works == 'yes' }}
+    {{ theme:partial name="recent-works" }} 
+{{ endif }} 
+
+<!-- Link Partner -->
+{{ if { url:segments segment="1" } == '' AND theme:options:partner == 'yes' }}
+    {{ theme:partial name="partner" }}
+{{ endif }}
+
 {{ if { url:segments segment="1" } == '' OR { url:segments segment="1" } == 'home' }}
 {{ elseif { url:segments segment="1" } == 'blog' }}
     {{ template:body }}

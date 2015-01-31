@@ -1,114 +1,23 @@
 <section id="recent-works">
     <div class="container">
         <div class="center wow fadeInDown">
-            <h2>Kegiatan Pendidikan</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <h2>Gallery Kegiatan</h2>
         </div>
-
-        <div class="row">
+        <div class="row wow fadeInDown">
+            {{ galleries:images slug="kegiatan" limit="8" }}
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item1.png" alt="">
+                    <img class="img-responsive" src="{{ url:site }}files/thumb/{{ file_id }}/293/222" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <h3><a href="#">Business theme</a> </h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                            <h3><a href="#">{{ name }}</a> </h3>
+                            <p>{{ description }}</p>
+                            <a class="preview" href="{{ url:site }}files/large/{{ file_id }}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                         </div> 
                     </div>
                 </div>
             </div>   
-
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item2.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme</a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div> 
-
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item3.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme </a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
-
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item4.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme </a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
-            
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item5.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme</a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
-
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item6.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme </a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div> 
-
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item7.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme </a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
-
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <div class="recent-work-wrap">
-                    <img class="img-responsive" src="{{ theme:path }}/images/portfolio/recent/item8.png" alt="">
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3><a href="#">Business theme </a></h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="{{ theme:path }}/images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
+            {{ /galleries:images }}   
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#recent-works-->

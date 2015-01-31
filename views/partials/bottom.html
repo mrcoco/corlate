@@ -19,11 +19,9 @@
                 <div class="widget">
                     <h3>Download</h3>
                     <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">SEO Marketing</a></li>
-                        <li><a href="#">Theme</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Email Marketing</a></li>                        
+                        {{ download:items limit="5" order="asc" }}
+                            <li><a href="{{ filename }}">{{ name }}</a></li> 
+                        {{ /download:items }}
                     </ul>
                 </div>    
             </div><!--/.col-md-3-->

@@ -8,11 +8,9 @@
                 <div class="col-sm-6 col-xs-8">
                    <div class="social">
                         <ul class="social-share">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            {{ sosial:items limit="5" order="asc" }}
+                                <li><a href="{{ link }}"><i class="{{ icon }}"></i></a></li>
+                            {{ /sosial:items }}                   
                         </ul>
                         <div class="search">
                             {{ search:form }} 
