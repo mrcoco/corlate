@@ -61,25 +61,17 @@
             <div class="col-xs-12 col-sm-4 wow fadeInDown">
                 <div class="testimonial">
                     <h2>Testimoni</h2>
-                     <div class="media testimonial-inner">
+                    {{ testimoni:items limit="5" order="asc" }}
+                       <div class="media testimonial-inner">
                         <div class="pull-left">
                             {{ theme:image file="testimonials1.png" class="img-responsive img-circle" }}
                         </div>
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                            <span><strong>-John Doe/</strong> Director of corlate.com</span>
+                            <p>{{testimoni}}</p>
+                            <span><strong>- {{ author }}</strong></span>
                         </div>
                      </div>
-
-                     <div class="media testimonial-inner">
-                        <div class="pull-left">
-                            {{ theme:image file="testimonials1.png" class="img-responsive img-circle" }}                        
-                        </div>
-                        <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                            <span><strong>-John Doe/</strong> Director of corlate.com</span>
-                        </div>
-                     </div>
+                    {{ /testimoni:items }}
                 </div>
             </div>
         </div><!--/.row-->
